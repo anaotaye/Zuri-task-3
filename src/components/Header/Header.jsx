@@ -1,8 +1,6 @@
 import logo from "../../assets/logo.svg";
 import wolfIcon from "../../assets/wolf_icon.svg";
 import walletIcon from "../../assets/wallet_icon.svg";
-import cancel from "../../assets/cancel.svg";
-import arrow from "../../assets/arrow.svg";
 import Modal from "react-modal";
 import { useState } from "react";
 
