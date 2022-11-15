@@ -26,7 +26,7 @@ const Store = () => {
       <Header />
 
       <div className="font-rose">
-        <ul className="p-5 max-w-[80%] flex items-center justify-between flex-row mx-auto overflow-auto md:overflow-hidden">
+        <ul className="p-5 max-w-[80%] flex items-center justify-between flex-row mx-auto gap-7 overflow-auto md:overflow-hidden">
           <li>Restaurant</li>
           <li>Cottage</li>
           <li>Cattle</li>
@@ -35,7 +35,7 @@ const Store = () => {
           <li>Cabins</li>
           <li>Off-grid</li>
           <li>Farm</li>
-          <div className="flex justify-between items-center border border-border rounded-md gap-x-4 p-2">
+          <div className="flex flex-row justify-between items-center border border-border gap-y-6 rounded-md px-8 py-2 mx-auto">
             <li>Location</li>
             <img src={setting} alt="settings" />
           </div>
