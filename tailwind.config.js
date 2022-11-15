@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         rose: ['"Red Rose"', "cursive"],
+        sora: ['Sora', "sans-serif"],
       },
     },
   },
