@@ -42,17 +42,17 @@ const Header = () => {
         <div className="hidden md:flex">
           <button
             onClick={openModal}
-            className="px-3 py-2 bg-secondary rounded-[10px] text-primary text-xs"
+            className="px-3 py-2 bg-secondary rounded-[10px] text-primary text-xs hover:opacity-50"
           >
             Connect Wallet
           </button>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
-            className="relative flex flex-col justify-center  items-center h-full  w-full bg-primary/10"
+            className="relative flex flex-col justify-center  items-center h-full w-full bg-primary/10"
           >
-            <div className="w-96 mx-auto border-2 rounded-2xl border-primary bg-primary pl-2">
-              <div className="w-full flex justify-between items-center p-3">
+            <div className="w-96 mx-auto border rounded-2xl border-border bg-primary pl-2">
+              <div className="w-full flex justify-between items-center p-3 border-b border-border">
                 <h3 className="font-bold font-rose text-lg">Connect Wallet</h3>
                 <div>
                   <svg
@@ -152,16 +152,20 @@ const Header = () => {
           </button>
           {isMenuOpen && (
             <div className="absolute top-0 left-0 w-full">
-              <div className="p-5 bg-black rounded shadow-sm">
+              <div className="p-5 bg-primary rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <a
                       href="/"
-                      aria-label="Qroniswap"
-                      title="Qroniswap"
+                      aria-label="Metabnb logo"
+                      title="Metabnb"
                       className="inline-flex items-center"
                     >
-                      <span>Metabnb</span>
+                      <div className="w-32 sm:w-40">
+                        <Link to="/">
+                          <img src={logo} alt="logo" />
+                        </Link>
+                      </div>
                     </a>
                   </div>
                   <div>
@@ -185,82 +189,50 @@ const Header = () => {
                     <li>
                       <a
                         href="/"
-                        aria-label="trade"
-                        title="trade"
+                        aria-label="Home"
+                        title="Home"
                         className="inline-flex items-center font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                       >
-                        <span>Trade</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            className="text-gray-500 h-5 w-5 ml-2"
-                            fill="currentColor"
-                          >
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
-                          </svg>
-                        </span>
+                        <Link to="/">Home</Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/store"
+                        aria-label="Place to stay"
+                        title="Store"
+                        className="inline-flex items-center font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                      >
+                        <Link to="/store">Place to Stay</Link>
                       </a>
                     </li>
                     <li>
                       <a
                         href="/"
-                        aria-label="earn"
-                        title="earn"
+                        aria-label="nfts"
+                        title="NFTs"
                         className="inline-flex items-center font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                       >
-                        <span>Earn</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            className="text-gray-500 h-5 w-5 ml-2"
-                            fill="currentColor"
-                          >
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
-                          </svg>
-                        </span>
+                        <a href="/">NFTs</a>
                       </a>
                     </li>
                     <li>
                       <a
                         href="/"
-                        aria-label="win"
-                        title="win"
+                        aria-label="Community"
+                        title="Community"
                         className="inline-flex items-center font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                       >
-                        <span>Win</span>
-                        <span>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            className="text-gray-500 h-5 w-5 ml-2"
-                            fill="currentColor"
-                          >
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
-                          </svg>
-                        </span>
+                        <a href="/">Community</a>
                       </a>
                     </li>
                   </ul>
                   <ul className="space-y-8">
-                    <li className="mt-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 48 48"
-                        className="h-10 w-10 text-white"
-                        fill="currentColor"
-                      >
-                        <path d="M7 40c-.8 0-1.5-.3-2.1-.9-.6-.6-.9-1.3-.9-2.1V11c0-.8.3-1.5.9-2.1C5.5 8.3 6.2 8 7 8h34c.8 0 1.5.3 2.1.9.6.6.9 1.3.9 2.1v26c0 .8-.3 1.5-.9 2.1-.6.6-1.3.9-2.1.9H7Zm0-17.1h34v-6.45H7v6.45Z" />
-                      </svg>
-                    </li>
                     <li>
                       <a
-                        href="/"
-                        className="rounded-[8px] [background:linear-gradient(95.08deg,_#9f2dfe,_#3bb2f9)] shadow-[0px_1px_2px_rgba(16,_24,_40,_0.05)] overflow-hidden flex flex-row p-[10px_18px] box-border items-center justify-center cursor-pointer hover:opacity-50"
+                        href="$"
+                        onClick={openModal}
+                        className="rounded-[10px] bg-secondary overflow-hidden flex flex-row p-[10px_18px] box-border items-center text-primary justify-center cursor-pointer hover:opacity-50 mt-3"
                         aria-label="Connect Wallet"
                         title="Connect Wallet"
                       >

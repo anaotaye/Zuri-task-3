@@ -20,16 +20,16 @@ const Home = () => {
     <>
       <Header />
       <div className="font-rose">
-        <div className="px-4 py-6 md:px-10 lg:flex lg:justify-between lg:items-center mx-auto flex smflex-col justify-center items-center">
-          <div className="sm:max-w-lg">
+        <div className="px-4 py-6 md:px-10 lg:justify-between lg:items-center mx-auto flex flex-col justify-center md:flex-row items-center">
+          <div className="md:max-w-lg">
             <div>
-              <h1 className="text-2xl lg:text-4xl font-bold mb-4 text-center">
+              <h1 className="text-2xl lg:text-4xl font-bold mb-4 mx-3 text-center">
                 Rent a <span className="text-secondary">Place</span> away from{" "}
                 <span className="text-secondary">Home</span> in the{" "}
                 <span className="text-secondary">Metaverse</span>
               </h1>
             </div>
-            <p className="mb-6 text-center">
+            <p className="mb-6 mx-3 text-center">
               we provide you access to luxury and affordable houses in the
               metaverse, get a chance to turn your imagination to reality at
               your comfort zone
