@@ -35,9 +35,9 @@ const Store = () => {
           <li>Cabins</li>
           <li>Off-grid</li>
           <li>Farm</li>
-          <div className="flex flex-row justify-between items-center border border-border gap-y-6 rounded-md px-8 py-2 mx-auto">
+          <div className="flex justify-between border border-border rounded-lg py-2 px-3 gap-4">
             <li>Location</li>
-            <img src={setting} alt="settings" />
+            <img className="cursor-pointer" src={setting} alt="settings" />
           </div>
         </ul>
 

@@ -20,10 +20,10 @@ const Home = () => {
     <>
       <Header />
       <div className="font-rose">
-        <div className="px-4 py-6 md:px-10 md:flex md:justify-between md:items-center mx-auto">
+        <div className="px-4 py-6 md:px-10 lg:flex lg:justify-between lg:items-center mx-auto flex smflex-col justify-center items-center">
           <div className="sm:max-w-lg">
             <div>
-              <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-center">
+              <h1 className="text-2xl lg:text-4xl font-bold mb-4 text-center">
                 Rent a <span className="text-secondary">Place</span> away from{" "}
                 <span className="text-secondary">Home</span> in the{" "}
                 <span className="text-secondary">Metaverse</span>
@@ -35,7 +35,7 @@ const Home = () => {
               your comfort zone
             </p>
 
-            <div className="flex items-center justify-center mx-auto my-12 text-sm">
+            <div className="flex items-center justify-center mx-8 my-12 text-sm">
               <input
                 className="py-3 pl-2 h-9 border-2 border-r-0 border-border rounded-l-md rounded-r-none text-border"
                 type="text"
@@ -49,7 +49,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-full mx-auto my-7 sm:w-1/2 md:w-1/3">
+          <div className="w-full mx-auto my-7 md:w-1/3">
             <img className="mx-auto" src={hero_img} alt="pictures of nfts" />
           </div>
         </div>
